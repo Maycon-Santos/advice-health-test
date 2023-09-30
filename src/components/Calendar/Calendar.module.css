@@ -1,0 +1,5 @@
+.wrapper {
+  & > :global(div) {
+    box-sizing: content-box;
+  }
+}
