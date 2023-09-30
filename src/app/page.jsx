@@ -60,7 +60,7 @@ export default function Home() {
                 <h2 className="fw-bold">Dashboard</h2>
 
                 <div className="container mt-3">
-                  <div className="row border">
+                  <div className="row border rounded">
                     {data.map(({ amount, label, icon, textColor }, index) => (
                       <div key={label} className="col">
                         <div
