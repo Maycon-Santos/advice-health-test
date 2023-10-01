@@ -4,15 +4,12 @@ import HomeSchedulesSidebar from "../components/HomeSchedulesSidebar";
 import Sidebar from "../components/Sidebar";
 import NotesTable from "../components/NotesTable";
 import NotesProvider from "../components/NotesProvider";
-import AssistanceProvider from "../components/AssistanceProvider";
 import DoctorsProvider from "../components/DoctorsProvider";
 import PatientsProvider from "../components/PatientsProvider";
+import SchedulesProvider from "../components/SchedulesProvider";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const assistanceReq = await fetch(`${process.env.API_BASE_URL}/assistance`);
-  const assistanceData = await assistanceReq.json();
-
   const notesReq = await fetch(`${process.env.API_BASE_URL}/notes`);
   const notesData = await notesReq.json();
 
@@ -22,12 +19,15 @@ export default async function Home() {
   const patientsReq = await fetch(`${process.env.API_BASE_URL}/patients`);
   const patientsData = await patientsReq.json();
 
+  const schedulesReq = await fetch(`${process.env.API_BASE_URL}/schedules`);
+  const schedulesData = await schedulesReq.json();
+
   return (
     <BootstrapProvider>
       <NotesProvider value={notesData}>
-        <AssistanceProvider value={assistanceData}>
-          <DoctorsProvider value={doctorsData}>
-            <PatientsProvider value={patientsData}>
+        <DoctorsProvider value={doctorsData}>
+          <PatientsProvider value={patientsData}>
+            <SchedulesProvider value={schedulesData}>
               <main className={styles.main}>
                 <div className="d-flex">
                   <div>
@@ -51,7 +51,7 @@ export default async function Home() {
                       </div>
 
                       <div className="mt-5">
-                        <AssistanceStatistics assistance={assistanceData} />
+                        <AssistanceStatistics />
                       </div>
 
                       <div className="mt-5">
@@ -65,9 +65,9 @@ export default async function Home() {
                   </div>
                 </div>
               </main>
-            </PatientsProvider>
-          </DoctorsProvider>
-        </AssistanceProvider>
+            </SchedulesProvider>
+          </PatientsProvider>
+        </DoctorsProvider>
       </NotesProvider>
     </BootstrapProvider>
   );

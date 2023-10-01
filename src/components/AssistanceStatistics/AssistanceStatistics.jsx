@@ -1,11 +1,11 @@
 "use client";
 
 import classNames from "classnames";
-import { useAssistance } from "../AssistanceProvider";
 import { assistancePattern } from "../../data/assistance";
+import { useSchedules } from "../SchedulesProvider";
 
 export const AssistanceStatistics = () => {
-  const { assistance } = useAssistance();
+  const { schedulesFlat } = useSchedules();
 
   const assistanceStatistics = {
     scheduled: {
@@ -26,20 +26,8 @@ export const AssistanceStatistics = () => {
     },
   };
 
-  assistance?.forEach(({ status }) => {
-    assistanceStatistics.scheduled.amount += 1;
-
-    if (status === "confirmed") {
-      assistanceStatistics.confirmed.amount += 1;
-    }
-
-    if (status === "treated") {
-      assistanceStatistics.treated.amount += 1;
-    }
-
-    if (status === "missing") {
-      assistanceStatistics.missing.amount += 1;
-    }
+  schedulesFlat.forEach(({ status }) => {
+    assistanceStatistics[status].amount += 1;
   });
 
   return (

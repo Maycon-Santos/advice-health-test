@@ -1,7 +1,7 @@
 "use client";
 
 import { formatDate } from "../../utils/date";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 
 const SchedulesContext = createContext();
 
@@ -10,6 +10,18 @@ export const SchedulesProvider = (props) => {
   const [allSchedules, setAllSchedules] = useState(value.schedules);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const schedules = allSchedules[formatDate(selectedDate)];
+
+  const schedulesFlat = useMemo(
+    () =>
+      Object.keys(schedules || {})
+        .map((hour) =>
+          Object.keys(schedules[hour] || {}).map(
+            (doctor_id) => schedules[hour][doctor_id]
+          )
+        )
+        .flat(),
+    [schedules]
+  );
 
   const update = async (data) => {
     const updateReq = await fetch(`api/schedules`, {
@@ -48,6 +60,7 @@ export const SchedulesProvider = (props) => {
         setSelectedDate,
         availableHours: value.availableHours,
         schedules: schedules,
+        schedulesFlat,
       }}
     >
       {children}
