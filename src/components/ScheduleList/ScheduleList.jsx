@@ -6,7 +6,7 @@ import { useDoctors } from "../DoctorsProvider";
 import { useSchedules } from "../SchedulesProvider";
 import { usePatients } from "../PatientsProvider";
 import { assistancePattern } from "../../data/assistance";
-import Modal from "./Modal";
+import Modal from "../EditScheduleModal";
 
 export const ScheduleList = () => {
   const [editModalIsOpen, setEditModalIsOpen] = useState(false);
@@ -17,11 +17,27 @@ export const ScheduleList = () => {
     status: "",
   });
 
-  const { availableHours, schedules, remove } = useSchedules();
+  const { availableHours, schedules, update, remove } = useSchedules();
   const { doctors } = useDoctors();
   const { patients } = usePatients();
   const searchParams = useSearchParams();
   const selectedDoctor = searchParams.get("doctor") || Object.keys(doctors)[0];
+
+  const updateSchedule = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      prev_hour: editModalData.prev_hour,
+      hour: editModalData.hour,
+      doctor_id: selectedDoctor,
+      patient_id: editModalData.patient_id,
+      status: editModalData.status,
+    };
+
+    await update(data);
+
+    setEditModalIsOpen(false);
+  };
 
   return (
     <>
@@ -114,6 +130,7 @@ export const ScheduleList = () => {
         onChange={setEditModalData}
         onClose={() => setEditModalIsOpen(false)}
         selectedDoctor={selectedDoctor}
+        onSubmit={updateSchedule}
       />
     </>
   );

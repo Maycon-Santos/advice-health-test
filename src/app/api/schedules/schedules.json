@@ -1,1 +1,1 @@
-{"2023-10-1":{"08:30":{"0":{"patient_id":"3","status":"scheduled"}},"09:30":{"0":{"patient_id":"12","status":"confirmed"},"1":{"patient_id":"2","status":"scheduled"}},"11:00":{},"14:30":{},"09:00":{"0":{"patient_id":"14","status":"scheduled"}},"10:30":{},"11:30":{"0":{"patient_id":"25","status":"scheduled"}},"12:00":{"0":{"patient_id":"5","status":"scheduled"}},"08:00":{"0":{"patient_id":"0","status":"scheduled"}}}}
+{"2023-10-1":{"08:00":{},"09:30":{"0":{"patient_id":"c42e736a-72eb-4bb7-ab93-a0cc6833f419","status":"scheduled"}}}}

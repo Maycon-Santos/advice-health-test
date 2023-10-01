@@ -10,16 +10,24 @@ import SchedulesProvider from "../components/SchedulesProvider";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const notesReq = await fetch(`${process.env.API_BASE_URL}/notes`);
+  const notesReq = await fetch(`${process.env.API_BASE_URL}/notes`, {
+    cache: "no-cache",
+  });
   const notesData = await notesReq.json();
 
-  const doctorsReq = await fetch(`${process.env.API_BASE_URL}/doctors`);
+  const doctorsReq = await fetch(`${process.env.API_BASE_URL}/doctors`, {
+    cache: "no-cache",
+  });
   const doctorsData = await doctorsReq.json();
 
-  const patientsReq = await fetch(`${process.env.API_BASE_URL}/patients`);
+  const patientsReq = await fetch(`${process.env.API_BASE_URL}/patients`, {
+    cache: "no-cache",
+  });
   const patientsData = await patientsReq.json();
 
-  const schedulesReq = await fetch(`${process.env.API_BASE_URL}/schedules`);
+  const schedulesReq = await fetch(`${process.env.API_BASE_URL}/schedules`, {
+    cache: "no-cache",
+  });
   const schedulesData = await schedulesReq.json();
 
   return (
