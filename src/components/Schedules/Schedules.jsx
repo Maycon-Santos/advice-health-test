@@ -4,39 +4,55 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
-import styles from "./Schedules.module.css";
+import { assistancePattern } from "@/data/assistance";
+import { useAssistance } from "../AssistanceProvider";
 import Calendar from "../Calendar";
+import styles from "./Schedules.module.css";
 
 export const Schedules = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const { assistance, date, setDate } = useAssistance();
 
   return (
     <div
       className={classNames(
-        "container bg-light py-2 border-start",
+        "container bg-light py-2 border-start overflow-y-auto",
         styles.wrapper
       )}
     >
       <Calendar
-        selectedDate={selectedDate}
+        selectedDate={date}
         onChangeSelectedDate={(dates) => {
-          if (dates) setSelectedDate(dates);
+          if (dates) setDate(dates);
         }}
       />
       <div className="list-group mt-2">
-        <Link href="/" className="list-group-item d-flex align-items-center">
-          <Image
-            src="https://thispersondoesnotexist.com/"
-            alt=""
-            width="48"
-            height="48"
-            className="rounded-circle me-2"
-          />
-          <div className="d-inline-flex flex-column">
-            <span className="fw-semibold">Ciclano da Silva</span>
-            <span className={styles.scheduleLabel}>Dr. Drauzio</span>
-          </div>
-        </Link>
+        {assistance?.map(({ photo, name, doctorName, status }) => (
+          <Link
+            key={name + doctorName}
+            href="/"
+            className="list-group-item d-flex align-items-center"
+          >
+            <Image
+              src={photo}
+              alt=""
+              width="48"
+              height="48"
+              className="rounded-circle me-2"
+            />
+            <div className="d-inline-flex flex-column">
+              <span className="fw-semibold">{name}</span>
+              <span className={styles.scheduleLabel}>{doctorName}</span>
+            </div>
+            <i
+              className={classNames(
+                "bi fs-5 mt-2",
+                styles.patientStatusIcon,
+                assistancePattern[status].icon,
+                assistancePattern[status].textColor
+              )}
+            />
+          </Link>
+        ))}
       </div>
     </div>
   );
