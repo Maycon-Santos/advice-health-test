@@ -1,9 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./Sidebar.module.css";
 import classNames from "classnames";
 
 export const Sidebar = () => {
+  const currentPage = usePathname();
+
+  console.log(currentPage);
+
   return (
     <div
       className={classNames(
@@ -20,13 +27,24 @@ export const Sidebar = () => {
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link href="/" className="nav-link active" aria-current="page">
+          <Link
+            href="/"
+            className={classNames("nav-link text-white", {
+              ["active"]: currentPage === "/",
+            })}
+            aria-current="page"
+          >
             Painel
           </Link>
         </li>
         <li>
-          <Link href="#" className="nav-link text-white">
-            Agenda
+          <Link
+            href="/schedules"
+            className={classNames("nav-link text-white", {
+              ["active"]: currentPage === "/schedules",
+            })}
+          >
+            Agendamentos
           </Link>
         </li>
       </ul>

@@ -1,15 +1,14 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
 import { assistancePattern } from "@/data/assistance";
 import { useAssistance } from "../AssistanceProvider";
 import Calendar from "../Calendar";
-import styles from "./Schedules.module.css";
+import styles from "./HomeSchedulesSidebar.module.css";
 
-export const Schedules = () => {
+export const HomeSchedulesSidebar = () => {
   const { assistance, date, setDate } = useAssistance();
 
   return (
