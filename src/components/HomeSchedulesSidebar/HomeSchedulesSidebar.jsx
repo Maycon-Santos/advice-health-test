@@ -41,13 +41,6 @@ export const HomeSchedulesSidebar = () => {
                 href="/"
                 className="list-group-item d-flex align-items-center list-group-item-action"
               >
-                <Image
-                  src={patients[patient_id].photo}
-                  alt=""
-                  width="48"
-                  height="48"
-                  className="rounded-circle me-2"
-                />
                 <div className="d-inline-flex flex-column">
                   <span className="fw-semibold">
                     {patients[patient_id].name}

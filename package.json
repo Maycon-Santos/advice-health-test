@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@react-input/mask": "^1.0.20",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.1",
     "classnames": "^2.3.2",
+    "gerador-validador-cpf": "^5.0.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-nice-calendar": "^0.1.6"
+    "react-nice-calendar": "^0.1.6",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "20.8.0",

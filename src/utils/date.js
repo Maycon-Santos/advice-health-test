@@ -23,6 +23,23 @@ export function getDateColorByDayLate(date) {
   return "text-warning";
 }
 
+export function validateBirthDate(date) {
+  const dateCopy = new Date(date.getTime());
+  const dateNow = new Date();
+
+  dateCopy.setHours(0, 0, 0, 0);
+  dateNow.setHours(0, 0, 0, 0);
+
+  const diffTime = dateNow - dateCopy;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  if (diffDays <= 30) {
+    return false;
+  }
+
+  return true;
+}
+
 export function formatDate(date) {
   return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 }
