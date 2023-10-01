@@ -22,3 +22,7 @@ export function getDateColorByDayLate(date) {
 
   return "text-warning";
 }
+
+export function formatDate(date) {
+  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+}

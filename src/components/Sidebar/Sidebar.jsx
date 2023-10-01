@@ -9,8 +9,6 @@ import classNames from "classnames";
 export const Sidebar = () => {
   const currentPage = usePathname();
 
-  console.log(currentPage);
-
   return (
     <div
       className={classNames(

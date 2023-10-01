@@ -1,0 +1,10 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.specialtyLabel {
+  font-size: 0.8rem;
+  line-height: 1;
+}

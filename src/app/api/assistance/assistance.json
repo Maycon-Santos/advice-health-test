@@ -1,296 +1,249 @@
 {
     "2023-9-30": [
         {
-            "name": "João Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "0",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Maria Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "1",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Carlos Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "2",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Ana Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "3",
+            "doctor_id": "3",
+            "status": "confirmed"
         },
         {
-            "name": "Pedro Santos",
-            "status": "treated",
-            "doctorName": "Dr. Almeida",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "4",
+            "doctor_id": "4",
+            "status": "treated"
         },
         {
-            "name": "Mariana Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "5",
+            "doctor_id": "1",
+            "status": "missing"
         },
         {
-            "name": "Luís Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "6",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Rui Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "7",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Sofia Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "8",
+            "doctor_id": "3",
+            "status": "confirmed"
         }
     ],
     "2023-10-1": [
         {
-            "name": "Ana Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "9",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Luís Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "10",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Beatriz Oliveira",
-            "status": "confirmed",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "11",
+            "doctor_id": "1",
+            "status": "confirmed"
         },
         {
-            "name": "Hugo Santos",
-            "status": "treated",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "12",
+            "doctor_id": "2",
+            "status": "treated"
         },
         {
-            "name": "Patrícia Rodrigues",
-            "status": "missing",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "13",
+            "doctor_id": "3",
+            "status": "missing"
         },
         {
-            "name": "Manuel Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Almeida",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "14",
+            "doctor_id": "4",
+            "status": "confirmed"
         }
     ],
     "2023-10-2": [
         {
-            "name": "Marta Santos",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "15",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "André Oliveira",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "16",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Inês Rodrigues",
-            "status": "treated",
-            "doctorName": "Dr. Almeida",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "17",
+            "doctor_id": "4",
+            "status": "treated"
         },
         {
-            "name": "Eduardo Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "18",
+            "doctor_id": "1",
+            "status": "missing"
         },
         {
-            "name": "Isabel Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "19",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Gustavo Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "20",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Helena Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "21",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Tiago Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "22",
+            "doctor_id": "3",
+            "status": "confirmed"
         }
     ],
     "2023-10-3": [
         {
-            "name": "Daniel Silva",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "23",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Vânia Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "24",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Ricardo Santos",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "25",
+            "doctor_id": "3",
+            "status": "confirmed"
         },
         {
-            "name": "Sara Rodrigues",
-            "status": "treated",
-            "doctorName": "Dr. Almeida",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "26",
+            "doctor_id": "4",
+            "status": "treated"
         },
         {
-            "name": "João Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "27",
+            "doctor_id": "1",
+            "status": "missing"
         },
         {
-            "name": "Andreia Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "28",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Hélder Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "29",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Carolina Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "30",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Nuno Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "31",
+            "doctor_id": "3",
+            "status": "confirmed"
         }
     ],
     "2023-10-4": [
         {
-            "name": "Rafaela Santos",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "32",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Miguel Rodrigues",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "33",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Vasco Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "34",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Beatriz Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "35",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Hugo Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "36",
+            "doctor_id": "3",
+            "status": "confirmed"
         }
     ],
     "2023-10-5": [
         {
-            "name": "Liliana Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "37",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "José Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "38",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Sofia Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "39",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Ricardo Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "40",
+            "doctor_id": "3",
+            "status": "confirmed"
         },
         {
-            "name": "Carla Santos",
-            "status": "treated",
-            "doctorName": "Dr. Almeida",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "41",
+            "doctor_id": "4",
+            "status": "treated"
         },
         {
-            "name": "António Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "42",
+            "doctor_id": "1",
+            "status": "missing"
         },
         {
-            "name": "Diana Rodrigues",
-            "status": "confirmed",
-            "doctorName": "Dr. Oliveira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "43",
+            "doctor_id": "0",
+            "status": "confirmed"
         },
         {
-            "name": "Fábio Santos",
-            "status": "treated",
-            "doctorName": "Dr. Pereira",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "44",
+            "doctor_id": "1",
+            "status": "treated"
         },
         {
-            "name": "Mónica Oliveira",
-            "status": "missing",
-            "doctorName": "Dr. Souza",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "45",
+            "doctor_id": "2",
+            "status": "missing"
         },
         {
-            "name": "Rodrigo Silva",
-            "status": "confirmed",
-            "doctorName": "Dr. Costa",
-            "photo": "https://thispersondoesnotexist.com/"
+            "patient_id": "46",
+            "doctor_id": "3",
+            "status": "confirmed"
         }
     ]
 }
