@@ -1,6 +1,6 @@
 "use client";
 
-import { formatDate } from "@/utils/date";
+import { formatDate } from "../../utils/date";
 import { createContext, useContext, useState } from "react";
 
 const SchedulesContext = createContext();

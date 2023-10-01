@@ -1,7 +1,7 @@
 "use client";
 
 import classNames from "classnames";
-import { getDateColorByDayLate } from "@/utils/date";
+import { getDateColorByDayLate } from "../../utils/date";
 import { useNotes } from "../NotesProvider";
 
 export const NotesTable = () => {

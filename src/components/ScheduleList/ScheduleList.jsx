@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useDoctors } from "../DoctorsProvider";
 import { useSchedules } from "../SchedulesProvider";
 import { usePatients } from "../PatientsProvider";
-import { assistancePattern } from "@/data/assistance";
+import { assistancePattern } from "../../data/assistance";
 import styles from "./ScheduleList.module.css";
 
 export const ScheduleList = () => {

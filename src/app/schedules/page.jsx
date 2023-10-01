@@ -1,12 +1,12 @@
-import BootstrapProvider from "@/components/BootstrapProvider";
-import Sidebar from "@/components/Sidebar";
-import NotesProvider from "@/components/NotesProvider";
-import AssistanceProvider from "@/components/AssistanceProvider";
-import SchedulesSidebar from "@/components/SchedulesSidebar";
-import DoctorsProvider from "@/components/DoctorsProvider";
-import PatientsProvider from "@/components/PatientsProvider";
-import SchedulesProvider from "@/components/SchedulesProvider";
-import ScheduleList from "@/components/ScheduleList";
+import BootstrapProvider from "../../components/BootstrapProvider";
+import Sidebar from "../../components/Sidebar";
+import NotesProvider from "../../components/NotesProvider";
+import AssistanceProvider from "../../components/AssistanceProvider";
+import SchedulesSidebar from "../../components/SchedulesSidebar";
+import DoctorsProvider from "../../components/DoctorsProvider";
+import PatientsProvider from "../../components/PatientsProvider";
+import SchedulesProvider from "../../components/SchedulesProvider";
+import ScheduleList from "../../components/ScheduleList";
 import styles from "./page.module.css";
 
 export default async function Schedules() {

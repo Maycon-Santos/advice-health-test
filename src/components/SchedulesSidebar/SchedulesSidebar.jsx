@@ -9,7 +9,7 @@ import Calendar from "../Calendar";
 import { useDoctors } from "../DoctorsProvider";
 import { useSchedules } from "../SchedulesProvider";
 import styles from "./SchedulesSidebar.module.css";
-import { formatDate } from "@/utils/date";
+import { formatDate } from "../../utils/date";
 
 export const SchedulesSidebar = () => {
   const { doctors } = useDoctors();

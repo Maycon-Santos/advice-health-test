@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
-import { assistancePattern } from "@/data/assistance";
+import { assistancePattern } from "../../data/assistance";
 import { useAssistance } from "../AssistanceProvider";
 import Calendar from "../Calendar";
 import { useDoctors } from "../DoctorsProvider";

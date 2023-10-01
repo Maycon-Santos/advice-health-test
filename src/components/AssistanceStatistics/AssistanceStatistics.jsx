@@ -2,7 +2,7 @@
 
 import classNames from "classnames";
 import { useAssistance } from "../AssistanceProvider";
-import { assistancePattern } from "@/data/assistance";
+import { assistancePattern } from "../../data/assistance";
 
 export const AssistanceStatistics = () => {
   const { assistance } = useAssistance();

@@ -1,12 +1,12 @@
-import AssistanceStatistics from "@/components/AssistanceStatistics";
-import BootstrapProvider from "@/components/BootstrapProvider";
-import HomeSchedulesSidebar from "@/components/HomeSchedulesSidebar";
-import Sidebar from "@/components/Sidebar";
-import NotesTable from "@/components/NotesTable";
-import NotesProvider from "@/components/NotesProvider";
-import AssistanceProvider from "@/components/AssistanceProvider";
-import DoctorsProvider from "@/components/DoctorsProvider";
-import PatientsProvider from "@/components/PatientsProvider";
+import AssistanceStatistics from "../components/AssistanceStatistics";
+import BootstrapProvider from "../components/BootstrapProvider";
+import HomeSchedulesSidebar from "../components/HomeSchedulesSidebar";
+import Sidebar from "../components/Sidebar";
+import NotesTable from "../components/NotesTable";
+import NotesProvider from "../components/NotesProvider";
+import AssistanceProvider from "../components/AssistanceProvider";
+import DoctorsProvider from "../components/DoctorsProvider";
+import PatientsProvider from "../components/PatientsProvider";
 import styles from "./page.module.css";
 
 export default async function Home() {
