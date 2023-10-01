@@ -36,6 +36,9 @@ export const SchedulesSidebar = () => {
                 "list-group-item d-flex align-items-center list-group-item-action",
                 {
                   ["active"]: selectedDoctor === id,
+                  ["disabled"]: doctors[id].invalidDates.includes(
+                    formatDate(selectedDate)
+                  ),
                 }
               )}
             >
