@@ -59,6 +59,7 @@ export const SchedulesProvider = (props) => {
         selectedDate,
         setSelectedDate,
         availableHours: value.availableHours,
+        allSchedules,
         schedules: schedules,
         schedulesFlat,
       }}

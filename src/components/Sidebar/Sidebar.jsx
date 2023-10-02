@@ -45,6 +45,16 @@ export const Sidebar = () => {
             Agendamentos
           </Link>
         </li>
+        <li>
+          <Link
+            href="/check-schedules"
+            className={classNames("nav-link text-white", {
+              ["active"]: currentPage === "/check-schedules",
+            })}
+          >
+            Consultar agendamentos
+          </Link>
+        </li>
       </ul>
       <hr />
       <div className="dropdown">
